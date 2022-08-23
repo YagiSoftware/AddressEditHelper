@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="tailwind.css" rel="stylesheet">
+    <title>Address Edit Helper app - Uninstallation Guide</title>
+  </head>
+  <body>
+    <div class="relative py-16 bg-white overflow-hidden">
+      <div class="hidden lg:block lg:absolute lg:inset-y-0 lg:h-full lg:w-full">
+        <div class="relative h-full text-lg max-w-prose mx-auto" aria-hidden="true">
+          <svg class="absolute top-12 left-full transform translate-x-32" width="404" height="384" fill="none" viewBox="0 0 404 384">
+            <defs>
+              <pattern id="74b3fd99-0a6f-4271-bef2-e80eeafdf357" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
+              </pattern>
+            </defs>
+            <rect width="404" height="384" fill="url(#74b3fd99-0a6f-4271-bef2-e80eeafdf357)" />
+          </svg>
+          <svg class="absolute top-1/2 right-full transform -translate-y-1/2 -translate-x-32" width="404" height="384" fill="none" viewBox="0 0 404 384">
+            <defs>
+              <pattern id="f210dbf6-a58d-4871-961e-36d5016a0f49" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
+              </pattern>
+            </defs>
+            <rect width="404" height="384" fill="url(#f210dbf6-a58d-4871-961e-36d5016a0f49)" />
+          </svg>
+          <svg class="absolute bottom-12 left-full transform translate-x-32" width="404" height="384" fill="none" viewBox="0 0 404 384">
+            <defs>
+              <pattern id="d3eb07ae-5182-43e6-857d-35c643af9034" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
+              </pattern>
+            </defs>
+            <rect width="404" height="384" fill="url(#d3eb07ae-5182-43e6-857d-35c643af9034)" />
+          </svg>
+        </div>
+      </div>
+      <div class="relative px-4 sm:px-6 lg:px-8">
+        <div class="text-lg max-w-prose mx-auto">
+          <h1>
+            <!-- <span class="block text-base text-center text-indigo-600 font-semibold tracking-wide uppercase">Introducing</span> -->
+            <span class="mt-2 block text-3xl text-center leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">Uninstall Guide</span>
+          </h1>
+          <p class="mt-8 text-xl text-gray-500 leading-8">
+            This page provides instruction on how to remove Address Edit Helper app related code from your Shopify store's theme (Order page) and order confirmation email template. If you have any problem with the instruction, please email axel@editaddress.app for help.
+            <br>
+            <br>
+            <a href="#step_one" class="text-blue-500" style="text-decoration: underline;">Step 1 : Remove the code from theme > customers/order.liquid page</a>
+            <br>
+            <a href="#step_two" class="text-blue-500" style="text-decoration: underline;">Step 2 : Remove the code from Order confirmation email template</a>
+            <br>
+          </p>
+          <article class="mt-8 text-xl text-gray-500 leading-8">
+            <h3 class="text-2xl font-semibold" id="step_one">Step 1 : Remove the code from theme > customers/order.liquid page</h3>
+            <br>
+            If your theme support app block, you don't have to do anything as the block will be removed when you have uninstalled the app. If you have copy pasted the code when installing, read on.
+            <br><br>
+            Go to your store theme, click <strong>'Actions'</strong> and select <strong>'Edit code'</strong>
+            <br><br>
+            <img src="edit_code.png" style="max-width: 100%"/>
+            <br><br>
+            Then find and open the <strong>customers/order.liquid</strong> file in the code editor. 
+            <br>
+            <br><br>
+            Then remove the code blocks that contains :
+            <br><br>
+            <pre>
+&lt;!-- Start Address Edit Helper snippet --&gt;
+....
+&lt;!-- end Cancellable app automated installation code --&gt;
+            </pre>
+            <br>
+            (Remove the code shown inside the red rectangle below)
+            <br><br>
+            <img src="theme_snippet.png" style="max-width: 100%"/>
+            <br><br>
+            and click <strong>"Save"</strong>
+            <br><br><br>
+
+            <h3 class="text-2xl font-semibold" id="step_two">Step 2 : Remove the code from Order confirmation email template</h3>
+            <br>
+            This step is only applicable if you have copy pasted code for Edit Address link into the Order Confirmation email template previously during installation.
+            <br>
+            Open your Shopify store, click <strong>'Settings'</strong>, select <strong>'Notification'</strong>, and select <strong>"Order confirmation"</strong>.
+            <br><br>
+            <img src="edit_email.png" style="max-width: 100%"/>
+            <br><br>
+            Then remove the code blocks that contains :
+            <br><br>
+            <pre>
+&lt;!-- Start Address Edit Helper snippet --&gt;
+....
+&lt;!-- end Cancellable app automated installation code --&gt;
+            </pre>
+            <br>
+            (Remove the code shown inside the red rectangle below)
+            <br><br>
+            <img src="email_snippet.png" style="max-width: 100%"/>
+
+
+            <br><br>
+            and click <strong>"Save"</strong>
+            <br><br>
+
+            Thats it! Thanks for giving Cancellable app a try.
+
+            If you have questions, please contact me by e-mail at <strong>axel@editaddress.app</strong>.
+          </article>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
