@@ -85,7 +85,7 @@
           <br><br>
           When customer update their shipping address using the app's edit shipping address form on the order status page, the app will receive the new shipping address and contact method, the app will also request existing shipping address used for the order from Shopify, to fill in the field that was disabled for editing (eg: some merchant might configure the app to disallow country / zip code editing). After that shipping address is updated successfully, the customer data will be discarded immediately. (Retention period should be less than 10 seconds since being accessed)
           <br><br>
-          <strong>Customer data is never stored in the app database</strong>
+          <strong>Customer data is never stored in the app database, server logs, or logged in error reporting / monitoring software.</strong>
           <br><br>
           For the store data (store name and store contact email), the data is stored in database until the user uninstalls the app.
           <br><br>
